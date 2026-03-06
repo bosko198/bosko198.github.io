@@ -1,0 +1,82 @@
+/* Artistic Portfolio Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a40);
+  color: #f0f0f0;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.glitch {
+  font-size: 4rem;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #ff00c1; }
+  25% { text-shadow: -2px -2px #00fff9; }
+  50% { text-shadow: 2px -2px #ff00c1; }
+  75% { text-shadow: -2px 2px #00fff9; }
+  100% { text-shadow: 2px 2px #ff00c1; }
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #00fff9;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff00c1;
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  color: #888;
+}
